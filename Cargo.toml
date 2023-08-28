@@ -1,0 +1,19 @@
+[package]
+name = "cloudwalk"
+description = "Generate match summaries from Quake 3 Arena log files"
+version = "0.1.0"
+authors = ["Carol Schulze <carol@ereski.org>"]
+edition = "2021"
+publish = false
+
+[dependencies]
+clap = { version = "4.4.0", default-features = false, features = ["cargo", "color", "std", "suggestions", "usage", "wrap_help"] }
+lazy_static = { version = "1.4.0", default-features = false }
+regex = { version = "1.9.4", default-features = false, features = ["perf", "std", "unicode-perl"] }
+strum = { version = "0.25.0", default-features = false }
+strum_macros = { version = "0.25.2", default-features = false }
+thiserror = { version = "1.0.47", default-features = false }
+
+[dev-dependencies]
+maplit = { version = "1.0.2", default-features = false }
+pretty_assertions = { version = "1.4.0", default-features = false, features = ["std"] }
